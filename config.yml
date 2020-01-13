@@ -1,0 +1,17 @@
+title: Choose your adventure
+tagline: A brand new course on Learning Lab
+description: A choice!
+template:
+  repo: choose-your-adventure-template
+  name: choose-your-adventure
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
